@@ -1,0 +1,22 @@
+.learn {
+  max-width: 50%;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 760px) and (min-width: 629px) {
+  .divhero {
+    flex-direction: column;
+  }
+  .divhero > div {
+    width: 100%;
+  }
+  .learn {
+    align-items: center;
+    justify-content: center;
+    margin-right: 150px;
+    max-width: 200px;
+  }
+}
