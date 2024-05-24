@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  /* height: 90px; */
+  height: 90px;
   border-bottom: 1px solid #eee;
   background: #fff;
   position: sticky;
@@ -47,42 +47,38 @@
   margin-top: 25px;
 }
 
+.Mobmenu {
+  position: absolute;
+  top: 6rem;
+  right: 2rem;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: fit-content;
+  min-width: 15rem;
+  background: #fff;
+  color: black;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 3px -2px black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+}
+
 .inline-flex {
   width: 100%;
   height: 40px;
   margin-top: 19px;
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 768px) {
   .hamburger {
     display: flex;
   }
 
   .nav-menu {
-    position: absolute;
-    flex-direction: column;
-    justify-content: start;
-    top: 90px;
-    right: -100%;
-    width: 50%;
-    height: 100vh;
-    transition: 0.4s;
-    z-index: 2;
-    background: #fff;
-    border-left: 1px solid #eee;
-  }
-
-  .nav-menu.active {
-    right: 0;
-  }
-
-  .nav-menu li {
-    padding: 1rem;
-    width: 100%;
-    border-bottom: 1px solid #eee;
-  }
-
-  .nav-menu a {
-    font-size: 1.2rem;
+    display: none;
   }
 }

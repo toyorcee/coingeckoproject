@@ -23,27 +23,29 @@ const Navbar = () => {
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
           </svg>
           <span className="ml-3 text-xl">
-            TE<span className="primary">Fi</span>
+            Te<span className="primary">Fi</span>
           </span>
         </a>
-        <ul
-          className={
-            click
-              ? "nav-menu active"
-              : "nav-menu md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center"
-          }
-        >
+        <ul className="nav-menu md:border-gray-400 flex flex-wrap items-center justify-center">
           <li>
-            <a className="mr-5 hover:text-gray-900">Home</a>
+            <a href="/" className="mr-5 hover:text-gray-900">
+              Home
+            </a>
           </li>
           <li>
-            <a className="mr-5 hover:text-gray-900">Featured</a>
+            <a href="/" className="mr-5 hover:text-gray-900">
+              Featured
+            </a>
           </li>
           <li>
-            <a className="mr-5 hover:text-gray-900">Earn</a>
+            <a href="/" className="mr-5 hover:text-gray-900">
+              Earn
+            </a>
           </li>
           <li>
-            <a className="mr-5 hover:text-gray-900">Contact</a>
+            <a href="/" className="mr-5 hover:text-gray-900">
+              Contact
+            </a>
           </li>
         </ul>
         <div className="wrapper">
@@ -68,6 +70,22 @@ const Navbar = () => {
               <FaBars size={30} style={{ color: "#333" }} />
             )}
           </div>
+        </div>
+        <div className="Mobmenu" style={{ display: click ? "flex" : "none" }}>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">Featured</a>
+            </li>
+            <li>
+              <a href="/">Earn</a>
+            </li>
+            <li>
+              <a href="/">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
