@@ -23,6 +23,7 @@
 
 .nav-menu {
   display: flex;
+  margin-top: 1rem;
 }
 
 .nav-menu li {
